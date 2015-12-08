@@ -9,7 +9,7 @@
 body {
     color: @text-color;
     background: @bg-color;
-    padding-top: 70px;
+    padding-top: 50px;
     /* for fixed navbar */
 }
 
@@ -18,9 +18,13 @@ header {
         color: @header-color;
     }
     background: @bg-img @bg-color no-repeat center center scroll;
+    .container {
+        background: fade(black, 50%);
+    }
 }
 
 .navbar-custom {
+    padding: 10px 0;
     background: @bg-color;
     .nav {
         li {
@@ -33,6 +37,18 @@ header {
             &.active a {
                 background-color: fade(black, 20%);
             }
+        }
+    }
+    &.top-nav-collapse {
+        .nav {
+            li {
+                a {
+                    color: @header-color;
+                }
+            }
+        }
+        .navbar-brand {
+            color: @header-color;
         }
     }
 }

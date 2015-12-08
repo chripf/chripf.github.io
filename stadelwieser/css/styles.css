@@ -3,7 +3,7 @@
 body {
   color: #333333;
   background: #ffffff;
-  padding-top: 70px;
+  padding-top: 50px;
   /* for fixed navbar */
 }
 header {
@@ -12,7 +12,11 @@ header {
 header * {
   color: #ffffff;
 }
+header .container {
+  background: rgba(0, 0, 0, 0.5);
+}
 .navbar-custom {
+  padding: 10px 0;
   background: #ffffff;
 }
 .navbar-custom .nav li a {
@@ -23,6 +27,12 @@ header * {
 }
 .navbar-custom .nav li.active a {
   background-color: rgba(0, 0, 0, 0.2);
+}
+.navbar-custom.top-nav-collapse .nav li a {
+  color: #ffffff;
+}
+.navbar-custom.top-nav-collapse .navbar-brand {
+  color: #ffffff;
 }
 a.navbar-brand {
   color: #333333;
