@@ -30,11 +30,10 @@ a.navbar-brand {
 .content-section {
   padding-top: 100px;
 }
-#portfolio figure {
-  height: 200px;
-  width: 100%;
+#portfolio .img-container {
+  height: 230px;
 }
-#portfolio img {
+#portfolio .img-container img {
   width: 100%;
   max-width: 300px;
 }
