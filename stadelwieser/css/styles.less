@@ -1,4 +1,5 @@
 @text-color: #333;
+@link-hover-color: green;
 @bg-color: #FFF;
 @bg-img: url(../img/weather-dark-rainy-blur.jpg);
 @header-color: #fff;
@@ -8,7 +9,7 @@
 body {
     color: @text-color;
     background: @bg-color;
-    padding-top: 90px;
+    padding-top: 70px;
     /* for fixed navbar */
 }
 
@@ -21,24 +22,26 @@ header {
 
 .navbar-custom {
     background: @bg-color;
-    
-}
-
-.navbar-custom a {
-    color: @text-color;
-    
-    .hover{
-        color:  #000;
+    .nav {
+        li {
+            a {
+                color: @text-color;
+                &:hover {
+                    color: @link-hover-color;
+                }
+            }
+            &.active a{
+                background-color: fade(black, 20%);
+            }
+        }
     }
 }
 
-.navbar-custom .nav li.active a{
-    border: dashed;
-    border-width: 3px;
-    
+a.navbar-brand {
+    color: @text-color;
 }
 
-.content-section{
+.content-section {
     padding-top: 100px;
 }
 
@@ -53,6 +56,6 @@ header {
     }
 }
 
-footer{
+footer {
     color: #ddd;
 }
