@@ -1,0 +1,58 @@
+@text-color: #333;
+@bg-color: #FFF;
+@bg-img: url(../img/weather-dark-rainy-blur.jpg);
+@header-color: #fff;
+
+/*#4d6671;*/
+
+body {
+    color: @text-color;
+    background: @bg-color;
+    padding-top: 90px;
+    /* for fixed navbar */
+}
+
+header {
+    * {
+        color: @header-color;
+    }
+    background: @bg-img @bg-color no-repeat center center scroll;
+}
+
+.navbar-custom {
+    background: @bg-color;
+    
+}
+
+.navbar-custom a {
+    color: @text-color;
+    
+    .hover{
+        color:  #000;
+    }
+}
+
+.navbar-custom .nav li.active a{
+    border: dashed;
+    border-width: 3px;
+    
+}
+
+.content-section{
+    padding-top: 100px;
+}
+
+#portfolio {
+    figure {
+        height: 200px;
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+footer{
+    color: #ddd;
+}
