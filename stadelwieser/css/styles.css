@@ -15,6 +15,10 @@ header * {
 header .container {
   background: rgba(0, 0, 0, 0.5);
 }
+.separatorbar {
+  /*background: @bg-img fade(@bg-color, 50%) no-repeat center center scroll;
+    height: 100px;*/
+}
 .navbar-custom {
   padding: 10px 0;
   background: #ffffff;
@@ -26,7 +30,7 @@ header .container {
   color: green;
 }
 .navbar-custom .nav li.active a {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .navbar-custom.top-nav-collapse .nav li a {
   color: #ffffff;
@@ -39,6 +43,9 @@ a.navbar-brand {
 }
 .content-section {
   padding-top: 100px;
+}
+#about img {
+  width: 100%;
 }
 #portfolio .img-container {
   height: 230px;
