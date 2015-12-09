@@ -19,6 +19,14 @@ header .container {
   /*background: @bg-img fade(@bg-color, 50%) no-repeat center center scroll;
     height: 100px;*/
 }
+.section-description {
+  text-transform: uppercase;
+  color: lightgray;
+  transform: rotate(-90deg);
+  position: relative;
+  left: -55%;
+  top: 50px;
+}
 .navbar-custom {
   padding: 10px 0;
   background: #ffffff;
