@@ -21,7 +21,7 @@ header .container {
 }
 .section-description {
   text-transform: uppercase;
-  color: lightgray;
+  color: rgba(84, 92, 108, 0.3);
   transform: rotate(-90deg);
   position: relative;
   left: -55%;
@@ -35,10 +35,14 @@ header .container {
   color: #333333;
 }
 .navbar-custom .nav li a:hover {
-  color: green;
+  color: #545c6c;
 }
 .navbar-custom .nav li.active a {
   background-color: rgba(255, 255, 255, 0.2);
+}
+.navbar-custom.top-nav-collapse {
+  border: 0px;
+  background-color: #545c6c;
 }
 .navbar-custom.top-nav-collapse .nav li a {
   color: #ffffff;

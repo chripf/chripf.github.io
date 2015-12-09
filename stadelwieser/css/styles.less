@@ -1,5 +1,5 @@
 @text-color: #333;
-@link-hover-color: green;
+@link-hover-color: #545c6c;
 @bg-color: #FFF;
 @bg-img: url(../img/weather-dark-rainy-blur.jpg);
 @header-color: #fff;
@@ -30,7 +30,7 @@ header {
 
 .section-description{
     text-transform: uppercase;
-    color: lightgray;
+    color: fade(@link-hover-color, 30%);
     transform:  rotate(-90deg);
     position: relative;
     left: -55%;
@@ -54,6 +54,8 @@ header {
         }
     }
     &.top-nav-collapse {
+        border: 0px;
+        background-color: #545c6c;
         .nav {
             li {
                 a {
