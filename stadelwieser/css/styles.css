@@ -54,6 +54,7 @@ a.navbar-brand {
 }
 #about img {
   width: 100%;
+  max-width: 300px;
 }
 #portfolio .img-container {
   height: 230px;
