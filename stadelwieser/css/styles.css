@@ -67,6 +67,14 @@ a.navbar-brand {
   width: 100%;
   max-width: 300px;
 }
+#references div {
+  height: 100px;
+}
+#references div img {
+  max-width: 100%;
+  max-height: 100px;
+}
 footer {
   color: #ddd;
+  padding-top: 200px;
 }
