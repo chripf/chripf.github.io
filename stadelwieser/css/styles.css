@@ -22,10 +22,14 @@ header .container {
 .section-description {
   text-transform: uppercase;
   color: rgba(84, 92, 108, 0.3);
-  transform: rotate(-90deg);
-  position: relative;
-  left: -55%;
-  top: 50px;
+}
+@media (min-width: 992px) {
+  .section-description {
+    transform: rotate(-90deg);
+    position: relative;
+    left: -55%;
+    top: 50px;
+  }
 }
 .navbar-custom {
   padding: 10px 0;
@@ -54,7 +58,7 @@ a.navbar-brand {
   color: #333333;
 }
 .content-section {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 #about img {
   width: 100%;
