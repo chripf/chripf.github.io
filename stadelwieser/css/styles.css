@@ -10,7 +10,7 @@ header {
   background: url(../img/weather-dark-rainy-blur.jpg) #ffffff no-repeat center center scroll;
 }
 header * {
-  color: #fff5ec;
+  color: #fff5c4;
 }
 header .container {
   background: rgba(35, 44, 60, 0.8);
@@ -61,10 +61,10 @@ header h1 {
   background-color: #545c6c;
 }
 .navbar-custom.top-nav-collapse .nav li a {
-  color: #fff5ec;
+  color: #fff5c4;
 }
 .navbar-custom.top-nav-collapse .navbar-brand {
-  color: #fff5ec;
+  color: #fff5c4;
 }
 a.navbar-brand {
   color: #333333;
