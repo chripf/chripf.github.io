@@ -7,12 +7,14 @@ skip = 0;
 postlimit = 10;
 
 $(document).ready(function () {
-    var $blogDiv = $('#blogEntries');
+    
    
     fetchPosts();
 });
 
 function fetchPosts(){
+    var $blogDiv = $('#blogEntries');
+    
     $.get(ghost.url.api('posts',
           {limit: 3})).done(function (data) {
         $.each(data.posts, function(i,p){
