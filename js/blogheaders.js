@@ -28,7 +28,7 @@ function fetchPosts(){
     });
 }
 
-
+lastScrollTop = 0; 
 $(window).scroll(function(event){
     // test if we are near the bottom of the window
     if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
