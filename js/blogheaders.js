@@ -9,7 +9,7 @@ $(document).ready(function () {
     $.get(ghost.url.api('posts',
           {limit: 3})).done(function (data) {
         $.each(data.posts, function(i,p){
-            $blogDiv.append("<h2>"+p.title+"</h2>");
+            $blogDiv.append('<a href="http://christianpfanner.at'+p.url+'"><h2>'+p.title+'</h2></a>');
         });
     }).fail(function (err) {
         console.log(err);
