@@ -1,3 +1,8 @@
+ ghost.init({
+            clientId: "ghost-frontend",
+            clientSecret: "40b8f9ac72ad"
+        });
+
 $(document).ready(function () {
     var $blogDiv = $('#blogEntries');
    

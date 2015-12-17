@@ -22,22 +22,30 @@
 <a id="just-a-starting-test" class="anchor" href="#just-a-starting-test" aria-hidden="true"><span class="octicon octicon-link"></span></a>Referenzen Webdesign</h1>
 
         <ul>
-            <li><a href="http://stadelwieser.at">Peter Stadelwieser</a></li>     
+            <li><a href="http://stadelwieser.at">Peter Stadelwieser</a></li>
             <li><a href="http://phios.li">Phios</a></li>
         </ul>
-        
+
         <h1>Aktuelles von meinem Blog        </h1>
         <div id="blogEntries"></div>
 
         <footer class="site-footer">
-           Kontakt: <a href="mailto:chripf@gmail.com">Mail</a>
+            Kontakt: <a href="mailto:chripf@gmail.com">Mail</a>
         </footer>
 
     </section>
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://my-ghost-blog.com/shared/ghost-url.min.js"></script>
+    <script type="text/javascript">
+        ghost.init({
+            clientId: "ghost-frontend",
+            clientSecret: "40b8f9ac72ad"
+        });
+    </script>
     <script type="text/javascript" src="js/blogheaders.js"></script>
+
 
 </body>
 
