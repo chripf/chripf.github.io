@@ -15,14 +15,13 @@ $(document).ready(function () {
 function fetchPosts(){
     var $blogDiv = $('#blogEntries');
     
+      ghost.init({
+            clientId: "ghost-frontend",
+            clientSecret: "40b8f9ac72ad"
+        });
     var url1 =ghost.url.api('posts',
           {limit: postlimit});
-    var url2 =ghost.url.api('posts',
-          {limit: postlimit});
-    
-    console.log("url1:" +url1);
-    console.log("url2:" +url2);
-    
+     
     $.get(url1).done(function (data) {
         $.each(data.posts, function(i,p){
             if(i>=skip){
