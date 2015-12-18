@@ -15,8 +15,15 @@ $(document).ready(function () {
 function fetchPosts(){
     var $blogDiv = $('#blogEntries');
     
-    $.get(ghost.url.api('posts',
-          {limit: postlimit})).done(function (data) {
+    var url1 =ghost.url.api('posts',
+          {limit: postlimit});
+    var url2 =ghost.url.api('posts',
+          {limit: postlimit});
+    
+    console.log("url1:" +url1);
+    console.log("url2:" +url2);
+    
+    $.get(url1).done(function (data) {
         $.each(data.posts, function(i,p){
             if(i>=skip){
                 $blogDiv.append('<a href="http://christianpfanner.at'+p.url+'"><h2>'+p.title+'</h2></a>');
