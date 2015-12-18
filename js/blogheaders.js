@@ -24,7 +24,7 @@ function fetchPosts(){
     postsUrl=ghost.url.api('',
           {limit: postlimit});
      
-    $.get(url1).done(function (data) {
+    $.get(postsUrl).done(function (data) {
         $.each(data.posts, function(i,p){
             if(i>=skip){
                 $blogDiv.append('<a href="http://christianpfanner.at'+p.url+'"><h2>'+p.title+'</h2></a>');
