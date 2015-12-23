@@ -2,7 +2,7 @@
 @link-hover-color: #545c6c;
 @bg-color: #FFF;
 @bg-img: url(../img/weather-dark-rainy-blur.jpg);
-@header-color: #fff5c4;
+@header-color: #3C4454;
 
 /*#4d6671;*/
 
@@ -14,16 +14,24 @@ body {
 }
 
 header {
-    * {
-        color: @header-color;
-    }
+   color: #3C4454;
+    
     background: @bg-img @bg-color no-repeat center center scroll;
     .container {
-        background: fade(#232c3c, 80%);
+        /*background: fade(#232c3c, 80%);*/
+        background: fade(white, 80%);
+        h1{                 
+            font-weight: 400;
+            text-transform: lowercase;
+        }
+        h2,
+        p{
+            color: @header-color;
+            font-family: Helvetica;
+            font-weight: 700;
+        }
     }    
-    h1{
-        text-transform: lowercase;
-    }
+    
 }
 
 /**** reactive jumbotron ****/

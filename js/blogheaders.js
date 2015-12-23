@@ -3,8 +3,6 @@
             clientSecret: "40b8f9ac72ad"
         });
 
-var postsUrl = ghost.url.api('posts',
-          {limit: postlimit});
 
 var skip = 0;
 var postlimit = 10;
@@ -16,12 +14,8 @@ $(document).ready(function () {
 
 function fetchPosts(){
     var $blogDiv = $('#blogEntries');
-    
-      ghost.init({
-            clientId: "ghost-frontend",
-            clientSecret: "40b8f9ac72ad"
-        });
-    postsUrl=ghost.url.api('',
+        
+    var postsUrl=ghost.url.api('posts',
           {limit: postlimit});
      
     $.get(postsUrl).done(function (data) {

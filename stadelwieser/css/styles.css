@@ -7,16 +7,22 @@ body {
   /* for fixed navbar */
 }
 header {
+  color: #3C4454;
   background: url(../img/weather-dark-rainy-blur.jpg) #ffffff no-repeat center center scroll;
 }
-header * {
-  color: #fff5c4;
-}
 header .container {
-  background: rgba(35, 44, 60, 0.8);
+  /*background: fade(#232c3c, 80%);*/
+  background: rgba(255, 255, 255, 0.8);
 }
-header h1 {
+header .container h1 {
+  font-weight: 400;
   text-transform: lowercase;
+}
+header .container h2,
+header .container p {
+  color: #3c4454;
+  font-family: Helvetica;
+  font-weight: 700;
 }
 /**** reactive jumbotron ****/
 @media (max-width: 430px) {
@@ -61,10 +67,10 @@ header h1 {
   background-color: #545c6c;
 }
 .navbar-custom.top-nav-collapse .nav li a {
-  color: #fff5c4;
+  color: #3c4454;
 }
 .navbar-custom.top-nav-collapse .navbar-brand {
-  color: #fff5c4;
+  color: #3c4454;
 }
 a.navbar-brand {
   color: #333333;
