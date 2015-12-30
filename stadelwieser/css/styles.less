@@ -2,7 +2,7 @@
 @link-hover-color: #545c6c;
 @bg-color: #FFF;
 @bg-img: url(../img/weather-dark-rainy-blur.jpg);
-@header-color: #fff5c4;
+@header-color: #FFF;
 
 /*#4d6671;*/
 
@@ -14,32 +14,33 @@ body {
 }
 
 header {
-    *{
+    * {
         color: white;
     }
-    
     background: @bg-img @bg-color no-repeat center center scroll;
     .container {
         background: fade(#232c3c, 80%);
-        
-        h1{                 
+        h1 {
             font-weight: 400;
             text-transform: lowercase;
         }
         h2,
-        p{
+        p {
             font-family: Helvetica;
             font-weight: 300;
         }
-    }        
+    }
 }
 
+
 /**** reactive jumbotron ****/
+
 @media (max-width: 430px) {
-    .jumbotron{ h1 {
-        font-size: 2em;
+    .jumbotron {
+        h1 {
+            font-size: 2em;
         }
-        p{
+        p {
             font-size: 1.3em;
         }
     }
@@ -53,7 +54,6 @@ header {
 .section-description {
     text-transform: uppercase;
     color: fade(@link-hover-color, 30%);
-    
     @media (min-width: 992px) {
         transform: rotate(-90deg);
         position: relative;
@@ -78,6 +78,9 @@ header {
             }
         }
     }
+    .navbar-toggle .icon-bar {
+        background-color: black;
+    }
     &.top-nav-collapse {
         border: 0px;
         background-color: #545c6c;
@@ -91,8 +94,13 @@ header {
         .navbar-brand {
             color: @header-color;
         }
+        .navbar-toggle .icon-bar {
+            background-color: white;
+        }
     }
-    
+    i {
+        color: white;
+    }
 }
 
 a.navbar-brand {
@@ -108,7 +116,7 @@ a.navbar-brand {
         width: 100%;
         max-width: 300px;
     }
-    .list-group{
+    .list-group {
         font-size: 16px;
     }
 }
@@ -123,18 +131,18 @@ a.navbar-brand {
     }
 }
 
-#references{
-    .row{
+#references {
+    .row {
         height: 100%;
         padding: 0 10%;
-        .col-lg-4, col-lg-6{
+        .col-lg-4,
+        col-lg-6 {
             height: 120px;
             text-align: center;
-            img{
+            img {
                 margin: 0 auto;
             }
         }
-        
     }
 }
 

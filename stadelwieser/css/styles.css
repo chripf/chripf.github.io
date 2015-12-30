@@ -62,15 +62,24 @@ header .container p {
 .navbar-custom .nav li.active a {
   background-color: rgba(255, 255, 255, 0.2);
 }
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: black;
+}
 .navbar-custom.top-nav-collapse {
   border: 0px;
   background-color: #545c6c;
 }
 .navbar-custom.top-nav-collapse .nav li a {
-  color: #fff5c4;
+  color: #ffffff;
 }
 .navbar-custom.top-nav-collapse .navbar-brand {
-  color: #fff5c4;
+  color: #ffffff;
+}
+.navbar-custom.top-nav-collapse .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-custom i {
+  color: white;
 }
 a.navbar-brand {
   color: #333333;
