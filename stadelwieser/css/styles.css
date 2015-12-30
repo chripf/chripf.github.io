@@ -82,6 +82,9 @@ a.navbar-brand {
   width: 100%;
   max-width: 300px;
 }
+#about .list-group {
+  font-size: 16px;
+}
 #portfolio .img-container {
   height: 230px;
 }
